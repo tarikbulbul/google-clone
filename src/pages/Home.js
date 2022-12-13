@@ -3,6 +3,7 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import AppsIcon from '@mui/icons-material/Apps';
 import { Avatar } from '@mui/material';
+import Search from './Search';
 
 const Home = () => {
   return (
@@ -14,10 +15,10 @@ const Home = () => {
         </div>
 
         <div className='home-headerRight'>
-        <Link to="/gmail">Gmail</Link>
-        <Link to="/images">Images</Link>
-        <AppsIcon />
-        <Avatar />
+          <Link to="/gmail">Gmail</Link>
+          <Link to="/images">Images</Link>
+          <AppsIcon />
+          <Avatar />
         </div>
       </div>
 
@@ -27,7 +28,7 @@ const Home = () => {
           alt=""
         />
         <div className='home-inputContainer'>
-          <p>Test</p>
+          <Search />
         </div>
       </div>
     </div>
